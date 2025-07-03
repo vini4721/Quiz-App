@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Developer Quiz</h1>
+    <div class="main-container">
+
+      <div class="question-option">
+        <div class="ques-container">
+          <div class="points-level">
+            <span class="points">100 Points</span>
+            <span class="level">Medium</span>
+          </div>
+
+          <div class="question">
+            <p></p>
+          </div>
+        </div>
+
+        <div class="option-container">
+          <div class="option-row">
+            <div class="option" data-index = "A">
+              <span class="opt">A</span>
+              <p></p>
+            </div>
+
+            <div class="option" data-index = "B">
+              <span class="opt">B</span>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="option-row">
+            <div class="option" data-index = "C">
+              <span class="opt">C</span>
+              <p></p>
+            </div>
+
+            <div class="option" data-index = "D">
+              <span class="opt">D</span>
+              <p></p>
+            </div>
+          </div>
+        </div>
+       
+        <div class="buttons">
+            <!-- <span class="previous btn">< Previous</span> -->
+            <span class="next btn">Next ></span>
+        </div>
+      </div>
+
+      <div class="quiz-status">
+        <h3 class="status">Quiz Status</h3>
+
+        <div class="score container">
+          <span class="score label">Score</span>
+          <span class="score num">0</span>
+        </div>
+
+        <div class="progress container">
+          <span class="progress label">Progress</span>
+          <span class="progress num">0/10</span>
+        </div>
+
+        <div class="timer container">
+          <span class="timer label">Time Left</span>
+          <span class="timer-warning num"></span>
+        </div>
+
+        <div class="submit container">Submit</div>
+        <canvas id="resultChart" height="0"></canvas>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
