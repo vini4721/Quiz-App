@@ -205,3 +205,23 @@ p {
 .timer-warning {
   color: red;
 }
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .question-option, .quiz-status {
+    width: 100%;
+  }
+
+  .option-container {
+    flex-direction: column;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
